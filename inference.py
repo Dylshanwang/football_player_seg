@@ -35,3 +35,4 @@ def infer(model_name: str, image_name: str):
     np_pred = (np_pred > 0.5).astype(np.uint8)
 
     plt.imsave("seg_image.png", np_pred[0][0], format="png", cmap="bwr")
+    print("Image saved as 'seg_image.png' in project root directory")
